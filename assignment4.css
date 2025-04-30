@@ -1,0 +1,78 @@
+/*
+
+Name: Joshua Desroches
+ID: 301350618
+Date: April 12th 2024
+assignment4.css
+
+*/
+body{
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.long_cont {
+    height: 100%;
+}
+
+.item {
+    height: 100%;
+    width: 200px;
+    float: left;
+    background-repeat: no-repeat;
+    position: center;
+    background-size: cover;
+}
+
+.see_prev,
+.see_next {
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.see_next {
+    right: 0;
+    left: auto;
+}
+
+.arrow_prev {
+    width: 100%;
+    align-self: center;
+    transform: rotate(180deg);
+}
+
+.arrow_next {
+    width: 100%;
+    align-self: center;
+}
+
+.see_prev:hover,
+.see_next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
